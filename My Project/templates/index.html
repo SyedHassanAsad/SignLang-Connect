@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>SignLang Connect - Finger Counting Module</title>
+</head>
+<body>
+    <header>
+        <h1>SignLang Connect</h1>
+    </header>
+
+    <div class="video-container">
+        <img id="video-feed" src="{{ url_for('video_feed') }}" alt="Video Feed">
+    </div>
+
+    <div class="instructions">
+        <h2>How to Use:</h2>
+        <ol>
+            <li>Hold your hand in front of the camera.</li>
+            <li>Use your hand to interpret number signs. </li>
+            <li>The corresponding number will be displayed on the video.</li>
+            <li>Ensure good lighting for accurate finger detection.</li>
+            <li>Further Updates are coming soon..!! </li>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 SignLang Connect</p>
+    </footer>
+</body>
+</html>
